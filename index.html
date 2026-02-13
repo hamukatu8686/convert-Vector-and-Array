@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>.at(i) &lt;-&gt; [i] converter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content=".at(i)と[i]を変換します。">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="converter">
+    <div class="input ui">
+      <label>.at(i)を入力</label>
+      <textarea rows="20" cols="60" id="vector"></textarea>
+    </div>
+    <div class="ui">
+      <div class="button" id="toArray">
+        <label>---</label>
+        <button>.at(i)を[i]に変換</button>
+        <label>--&gt;</label>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="button" id="toVector">
+        <label>&lt;--</label>
+        <button>[i]を.at(i)に変換</button>
+        <label>---</label>
+      </div>
+    </div>
+    <div class="input ui">
+      <label>[i]を入力</label>
+      <textarea rows="20" cols="60" id="array"></textarea>
+    </div>
+  </div>
+  <label>c++コード中の.at(i)と[i]を変換します.<br>
+    コンパイルエラーになるコードはうまく変換できないことがあります.<br>
+    非常に中途半端な場所にコメントがあるとうまく動作しません. (vector./*x*/at(1) など)
+  </label>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
